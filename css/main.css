@@ -61,7 +61,7 @@ hr {
 
 .wrapper {
   width: 100%;
-  max-width: 1670px;
+  max-width: 1400px;
   margin: 0 auto;
 }
 
@@ -78,6 +78,10 @@ hr {
   background-color: var(--red-color);
 }
 
+.yellow-color {
+  color: var(--yellow-color);
+}
+
 header {
   display: flex;
   flex-direction: row;
@@ -86,8 +90,16 @@ header {
   padding: var(--styling-width-mobile);
 }
 
+.header-image__logo {
+  color: var(--white-color);
+  font-weight: bold;
+  font-size: 2.5rem;
+  text-decoration: none;
+}
+
 .header-image__hamburger {
   cursor: pointer;
+  scale: 1.3;
 }
 
 .header__navigation, .mobile-navigation {
@@ -213,6 +225,96 @@ header {
 }
 
 .landingpage img {
-  margin:  var(--styling-width-mobile);
-  width: 20rem;
+  width: 100%;
+  padding: 0 var(--styling-width-mobile);
+}
+
+
+.about {
+  padding: 0 var(--styling-width-mobile);
+}
+.about__intro-text--thank {
+  font-size: 1.562rem;
+  font-weight: bold;
+  margin: 1rem 0;
+}
+
+.about__links {
+  margin: 1rem 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about__my-links {
+  margin-bottom: 1rem;
+}
+
+.about__links-wrap {
+  width: 10rem;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.about__links-wrap img {
+  scale: 1;
+}
+
+.about__personal-info {
+}
+.about__personal-info li, a {
+  color: var(--white-color);
+  list-style-type: none;
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+.about__personal-info .yellow-color {
+  margin-right: 0.5rem;
+  font-size: 1rem;
+}
+.about img {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.quote {
+  margin: 7rem 1rem;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.quote img {
+  width: 5rem;
+  margin: 0.5rem 0;
+}
+
+.quote-svg-reverse {
+  align-self: flex-end;
+  transform: rotate(180deg);
+}
+
+.skills__title {
+  margin-bottom: 2rem;
+}
+
+
+.skills {
+  padding: 0 var(--styling-width-mobile);
+}
+.skills-grid {
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 2rem 4rem;
+
+}
+
+.skills-grid img {
+  width: 100%;
+  justify-self: center;
 }
