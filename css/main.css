@@ -457,3 +457,53 @@ label>.form-styling:focus+.form-label {
   font-weight: bold;
   cursor: pointer;
 }
+
+.footer-hr--above {
+  margin: 7rem 0 0 0 ;
+}
+.footer-hr--beneath {
+  margin: 0;
+}
+
+footer {
+  /* background: coral; */
+  margin: 1rem 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer p {
+  font-size: 1rem;
+}
+
+.footer__links-wrap {
+  width: 10rem;
+  margin-top: 1rem;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__links-wrap a img {
+  transform: scale(0.7);
+}
+
+.footer-nav ul {
+  display: flex;
+}
+.footer-nav ul li {
+  list-style-type: none;
+}
+.footer-nav ul li a {
+  color: var(--yellow-color);
+  display: inline-block;
+  margin: 0 0.5rem;
+}
+
+.copyright-text {
+  color: var(--yellow-color);
+  font-size: 1rem;
+  text-align: center;
+  margin: 1rem 0;
+}
