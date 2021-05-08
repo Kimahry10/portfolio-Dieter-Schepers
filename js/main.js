@@ -1,6 +1,7 @@
 const hamburger = document.querySelectorAll('.header-image__hamburger');
 const mobileNavigation = document.querySelector('.mobile-navigation');
 const skillsGrid = document.querySelector('.skills-grid');
+const projects = document.querySelector('.projects__list');
 
 
 
@@ -17,5 +18,18 @@ hamburger.forEach(ham => {
 // shows all skills
 for (let i = 1; i < 12; i++) {
   skillsGrid.innerHTML += `<img src='img/skills/skill${i}.svg' >`;
-  
+
 }
+
+// loop through json file
+fetch('skills.json')
+  .then(response => response.json())
+  .then(data => {
+    data.map(project => {
+      const test = project.id;
+      projects.innerHTML += `
+      <li><a class='projects__list-item' data-id='${project.id}' href='${project.link}'>${project.title}</a></li>
+      `
+    })
+
+  });
