@@ -91,6 +91,7 @@ header {
 }
 
 .header-image__logo {
+  margin: 0;
   color: var(--white-color);
   font-weight: bold;
   font-size: 2.5rem;
@@ -174,7 +175,15 @@ header {
   }
 }
 
+@media (min-width: 70rem) {
+  .landingpage {
+    height: 90vh;
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
 
 .landingpage__text-wrap {
   display: flex;
@@ -200,9 +209,18 @@ header {
 
 .landingpage__button-wrap {
   padding: 0 var(--styling-width-mobile);
+  margin-top: 1rem;
 
   display: flex;
   flex-direction: column;
+}
+
+@media (min-width: 70rem) {
+  .landingpage__button-wrap {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
 }
 
 .landingpage__button--projects {
@@ -215,6 +233,18 @@ header {
   padding: 1.3rem;
   margin: var(--styling-width-mobile) 0;
   border-radius: 3px;
+}
+
+@media (min-width: 70rem) {
+  .landingpage__button--projects {
+    padding: 1rem 2rem;
+  }
+
+  .landingpage__button--projects:hover {
+    color: var(--white-color);
+    box-shadow: inset 10rem 0 0 0 #25b382;
+    transition: 0.4s;
+  }
 }
 
 .landingpage__button--resume {
@@ -231,6 +261,21 @@ header {
   border-radius: 3px;
 }
 
+@media (min-width: 70rem) {
+  .landingpage__button--resume {
+    margin: 0;
+    margin-left: 2rem;
+    padding: 1rem 2rem;
+  }
+
+  .landingpage__button--resume:hover {
+    color: var(--white-color);
+    box-shadow: inset 10rem 0 0 0 #25b382;
+    border: 1px solid #25b382;
+    transition: 0.4s;
+  }
+}
+
 .landingpage img {
   width: 100%;
   padding: 0 var(--styling-width-mobile);
@@ -239,6 +284,13 @@ header {
 
 .about {
   padding: 0 var(--styling-width-mobile);
+}
+
+@media (min-width: 70rem) {
+  .about {
+    display: flex;
+    /* background: rgb(88, 168, 214); */
+  }
 }
 
 .about__intro-text--thank {
@@ -253,6 +305,12 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+@media (min-width: 70rem) {
+  .about__links {
+    align-items: flex-start;
+  }
 }
 
 .about__my-links {
@@ -270,7 +328,19 @@ header {
   scale: 1;
 }
 
-.about__personal-info {}
+@media (min-width: 40rem) {
+  .about__intro-text--info {
+    max-width: 80%;
+  }
+}
+
+@media (min-width: 70rem) {
+  .about__personal-info {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+  }
+}
 
 .about__personal-info li,
 a {
@@ -279,6 +349,14 @@ a {
   text-decoration: none;
   margin-bottom: 0.5rem;
   font-size: 0.9rem;
+}
+
+@media (min-width: 70rem) {
+
+  .about__personal-info li,
+  a {
+    font-size: 1.2rem;
+  }
 }
 
 .about__personal-info .yellow-color {
@@ -298,9 +376,28 @@ a {
   flex-direction: column;
 }
 
+@media (min-width: 70rem) {
+  .quote {
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .quote p {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+  }
+}
+
 .quote img {
   width: 5rem;
   margin: 0.5rem 0;
+}
+
+@media (min-width: 70rem) {
+  .quote img {
+    transform: scale(1.5);
+  }
 }
 
 .quote-svg-reverse {
@@ -318,17 +415,38 @@ a {
 }
 
 .skills-grid {
-
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 2rem 4rem;
+}
 
+@media (min-width: 70rem) {
+  .skills-grid {
+    gap: 4rem;
+  }
 }
 
 .skills-grid img {
   width: 100%;
   justify-self: center;
+}
+
+.skills-grid img:hover {
+  transform: scale(1.5);
+  transition: 0.2s;
+}
+
+@media (min-width: 40rem) {
+  .skills-grid img {
+    width: 50%;
+  }
+}
+
+@media (min-width: 70rem) {
+  .skills-grid img {
+    width: 20%;
+  }
 }
 
 .projects {
@@ -340,9 +458,6 @@ a {
   margin-top: 3rem;
 }
 
-.projects__list li {
-  list-style-type: none;
-}
 
 .projects__list-item {
   color: var(--yellow-color);
@@ -351,6 +466,8 @@ a {
   margin: 1rem 0;
   display: block;
   text-align: center;
+  list-style-type: none;
+  cursor: pointer;
 }
 
 .projects__view-all {
@@ -440,6 +557,7 @@ label>.form-styling:focus+.form-label {
 .collaborate__form .form-styling:focus::placeholder {
   color: transparent;
 }
+
 .collaborate__form .textarea {
   height: 10rem;
   resize: none;
@@ -459,8 +577,9 @@ label>.form-styling:focus+.form-label {
 }
 
 .footer-hr--above {
-  margin: 7rem 0 0 0 ;
+  margin: 7rem 0 0 0;
 }
+
 .footer-hr--beneath {
   margin: 0;
 }
@@ -473,6 +592,7 @@ footer {
   flex-direction: column;
   align-items: center;
 }
+
 footer p {
   font-size: 1rem;
 }
@@ -492,9 +612,11 @@ footer p {
 .footer-nav ul {
   display: flex;
 }
+
 .footer-nav ul li {
   list-style-type: none;
 }
+
 .footer-nav ul li a {
   color: var(--yellow-color);
   display: inline-block;

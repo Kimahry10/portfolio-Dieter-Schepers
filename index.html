@@ -39,16 +39,18 @@
 
         <main>
             <div class='landingpage'>
-                <div class='landingpage__text-wrap'>
-                    <h1 class='landingpage__fullname'>Dieter Schepers</h1>
-                    <h2 class='landingpage__jobtitle'><span class="red-color">full stack</span> developer</h2>
-                    <p class='landingpage__intro-text'>Passionate full stack developer that is eager to learn. I make
-                        full responsive static and dynamic websites.</p>
-                </div>
-                <div class='landingpage__button-wrap'>
-                    <a class='landingpage__button--projects' href="#">Projects</a>
-                    <a class='landingpage__button--resume' href="#">Resume</a>
-                </div>
+               <div class="landingpage__text-button-wrap">
+                    <div class='landingpage__text-wrap'>
+                        <h1 class='landingpage__fullname'>Dieter Schepers</h1>
+                        <h2 class='landingpage__jobtitle'><span class="red-color">full stack</span> developer</h2>
+                        <p class='landingpage__intro-text'>Passionate full stack developer that is eager to learn. I make
+                            full responsive static and dynamic websites.</p>
+                    </div>
+                    <div class='landingpage__button-wrap'>
+                        <a class='landingpage__button--projects' href="#">Projects</a>
+                        <a class='landingpage__button--resume' href="#">Resume</a>
+                    </div>
+               </div>
 
                 <img src="img/portfolio.svg" alt="frontpage image">
             </div>
@@ -56,34 +58,35 @@
             <hr>
 
             <section class="about">
-                <h2 class='about__title'>About <span class="red-color-and-border">me</span></h2>
-                <p class="about__intro-text--thank">Hi I'm <span class='yellow-color'>Dieter</span>, thank you for
-                    visiting my website!</p>
-                <p class="about__intro-text--info">I'm a student at Arteveldehogeschool in Ghent. Currently in my first
-                    year of Web development. Besides <span class="yellow-color">making websites</span>, I like to play
-                    <span class="yellow-color">games</span>, listen to <span class="yellow-color">music</span> and <span
-                        class="yellow-color">socialize</span>.</p>
-                <div class="about__links">
-                    <p class="about__my-links">My links:</p>
-                    <div class="about__links-wrap">
-                        <a href='https://www.linkedin.com/in/dieter-schepers-a3b4471b7/' target="_blank"><img
-                                src="img/linkedin.svg" alt="linkedIn logo"></a>
-                        <a href="https://github.com/pgm-dieterschepers" target="_blank"><img src="img/github.svg"
-                                alt="Github logo"></a>
-                        <a href="https://stackoverflow.com/users/15207971/pgm-dieterschepers" target="_blank"><img
-                                src="img/stackoverflow.svg" alt="Stackoverflow logo"></a>
+                <div class="about-wrap">
+                    <h2 class='about__title'>About <span class="red-color-and-border">me</span></h2>
+                    <p class="about__intro-text--thank">Hi I'm <span class='yellow-color'>Dieter</span></p>
+                    <p class="about__intro-text--info">I'm a student at Arteveldehogeschool in Ghent. Currently in my first
+                        year of Web development. Besides <span class="yellow-color">making websites</span>, I like to play
+                        <span class="yellow-color">games</span>, listen to <span class="yellow-color">music</span> and <span
+                            class="yellow-color">socialize</span>.</p>
+                    <div class="about__links">
+                        <p class="about__my-links">My links:</p>
+                        <div class="about__links-wrap">
+                            <a href='https://www.linkedin.com/in/dieter-schepers-a3b4471b7/' target="_blank"><img
+                                    src="img/linkedin.svg" alt="linkedIn logo"></a>
+                            <a href="https://github.com/pgm-dieterschepers" target="_blank"><img src="img/github.svg"
+                                    alt="Github logo"></a>
+                            <a href="https://stackoverflow.com/users/15207971/pgm-dieterschepers" target="_blank"><img
+                                    src="img/stackoverflow.svg" alt="Stackoverflow logo"></a>
+                        </div>
                     </div>
+                    <ul class="about__personal-info">
+                        <li><span class="yellow-color"><strong>Birthday:</strong></span>06/06/1996</li>
+                        <li><span class="yellow-color"><strong>Age:</strong></span>25</li>
+                        <li><span class="yellow-color"><strong>Degree:</strong></span>graduate programming</li>
+                        <li><span class="yellow-color"><strong>Email:</strong></span><a
+                                href="mailto:dieterschepers96@gmail.com">dieterschepers96@gmail.com</a></li>
+                        <li><span class="yellow-color"><strong>Phone:</strong></span><a href="tel:+470823381">0470 82 33
+                                81</a></li>
+                        <li><span class="yellow-color"><strong>City:</strong></span>Steenokkerzeel, Vlaams-Brabant</li>
+                    </ul>
                 </div>
-                <ul class="about__personal-info">
-                    <li><span class="yellow-color"><strong>Birthday:</strong></span>06/06/1996</li>
-                    <li><span class="yellow-color"><strong>Age:</strong></span>25</li>
-                    <li><span class="yellow-color"><strong>Degree:</strong></span>graduate programming</li>
-                    <li><span class="yellow-color"><strong>Email:</strong></span><a
-                            href="mailto:dieterschepers96@gmail.com">dieterschepers96@gmail.com</a></li>
-                    <li><span class="yellow-color"><strong>Phone:</strong></span><a href="tel:+470823381">0470 82 33
-                            81</a></li>
-                    <li><span class="yellow-color"><strong>City:</strong></span>Steenokkerzeel, Vlaams-Brabant</li>
-                </ul>
                 <img src="img/profile.svg" alt="profile svg">
             </section>
 
@@ -103,6 +106,7 @@
             <section class="projects">
                 <h2>My cool <span class="red-color-and-border">projects</span></h2>
                 <ul class="projects__list"></ul>
+                <div class="test" id="test"></div>
                 <a class='projects__view-all' href="projects.html">view all projects</a>
             </section>
 
@@ -147,7 +151,7 @@
         <footer>
             <a class='header-image__logo' href='/'><span class='yellow-color'>D</span>S</a>
             <p>Dieter Schepers</p>
-            <p><span class='red-color'>fullstack</span>developer</p>
+            <p><span class='red-color'>fullstack</span> developer</p>
             <div class="footer__links-wrap">
                 <a href='https://www.linkedin.com/in/dieter-schepers-a3b4471b7/' target="_blank"><img
                         src="img/linkedin.svg" alt="linkedIn logo"></a>
