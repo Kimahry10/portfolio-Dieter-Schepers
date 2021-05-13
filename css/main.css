@@ -637,6 +637,12 @@ label>.form-styling:focus+.form-label {
   cursor: pointer;
 }
 
+.collaborate__form--submit-btn:hover {
+  color: var(--white-color);
+  box-shadow: inset 35rem 0 0 0 #25b382;
+  transition: 0.4s;
+}
+
 .footer-hr--above {
   margin: 7rem 0 0 0;
 }
