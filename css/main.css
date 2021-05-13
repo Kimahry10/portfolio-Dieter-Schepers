@@ -156,19 +156,28 @@ header {
   .header__navigation ul {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-between; 
   }
 
   .header__navigation ul li {
     margin: 0 1rem;
     list-style-type: none;
+    display: inline-block;
   }
 
   .header__navigation ul li a {
     font-size: 1.2rem;
     color: var(--yellow-color);
     text-decoration: none;
+    display: inline-block;
+    text-align: center;
   }
+.header__navigation ul li a:hover {
+  /* color: #25b382; */
+  text-shadow: 0 0 2px var(--yellow-color),
+  0 0 2px var(--yellow-color);
+}
+  
 
   .header-image__hamburger {
     display: none;
@@ -288,8 +297,9 @@ header {
 
 @media (min-width: 70rem) {
   .about {
+    margin-top: 7rem;
+
     display: flex;
-    /* background: rgb(88, 168, 214); */
   }
 }
 
@@ -379,8 +389,7 @@ a {
 @media (min-width: 70rem) {
   .quote {
     max-width: 70%;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 14rem auto;
   }
 
   .quote p {
@@ -454,6 +463,12 @@ a {
   padding: 0 var(--styling-width-mobile);
 }
 
+@media (min-width: 70rem) {
+  .projects{
+    margin: 14rem 0
+  }
+}
+
 .projects__list {
   margin-top: 3rem;
 }
@@ -470,6 +485,12 @@ a {
   cursor: pointer;
 }
 
+@media (min-width: 70rem) {
+  .projects__list-item{
+    font-size: 4rem;
+  }
+}
+
 .projects__view-all {
   background: var(--yellow-color);
   color: var(--primary-color);
@@ -483,6 +504,21 @@ a {
   border-radius: var(--default-border-radius);
 }
 
+.projects__view-all:hover {
+  color: var(--white-color);
+  box-shadow: inset 15rem 0 0 0 #25b382;
+  transition: 0.4s;
+}
+
+@media (min-width: 70rem) {
+  .projects__view-all{
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem 2rem;
+    width: 15rem;
+  }
+}
+
 
 .collaborate {
   padding: 0 var(--styling-width-mobile);
@@ -494,6 +530,14 @@ a {
 
 .collaborate__contact-info {
   margin: 2rem 0;
+}
+
+@media (min-width: 70rem) {
+  .collaborate__contact-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .collaborate__contact-info li {
@@ -512,8 +556,25 @@ a {
   font-size: 1.2rem;
 }
 
+@media (min-width: 70rem) {
+  .collaborate__contact-info li a{
+    font-size: 1.8rem;
+  }
+}
+
 .collaborate__form {
   margin-top: 7rem;
+
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 70rem) {
+  .collaborate__form{
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .collaborate__form label {
