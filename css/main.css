@@ -800,3 +800,6 @@ footer p {
 .projects-body__projects p {
   margin-top: 1rem;
 }
+.align-bottom {
+  justify-self: flex-end;
+}
