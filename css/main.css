@@ -800,6 +800,29 @@ footer p {
 .projects-body__projects p {
   margin-top: 1rem;
 }
-.align-bottom {
-  justify-self: flex-end;
+.projects-body__projects__project {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.projects-page__button {
+  width: 100%;
+  background: yellow;
+  color: var(--primary-color);
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 1rem;
+  margin: 1rem auto;
+  display: block;
+  border-radius: var(--default-border-radius);
+}
+
+@media (min-width: 70rem) {
+  .projects-page__button:hover{
+    color: var(--white-color);
+    box-shadow: inset 28rem 0 0 0 #25b382;
+    transition: 0.4s;
+  }
 }
