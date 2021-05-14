@@ -8,7 +8,7 @@ fetch('../projects/projects.json')
       <div class='projects-body__projects__project'>
         <div class='projects-body__projects__project-wrap'>
           <h3>${project.title}</h3>
-          <img src='../../${project.img}'>
+          <img src='../${project.img}'>
           <p>${project.text}</p>
         </div>
         <a class='projects-page__button' href='${project.link}' target=_blank>view project</a>
