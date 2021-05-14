@@ -1,21 +1,21 @@
 const projects = [{
   id: "e71edeb9-d51a-475e-b3af-202211c2fca4",
   title: "Arne Quinze",
-  text: "Arne Quinze is een Gentse kunstenaar waarvan we zijn site moesten namaken. Hierbij heb ik onder andere self taught css grid geleerd.",
+  text: "Arne Quinze is a Belgian artist whose site we had to copy. In this project I taught myself css grid.",
   img: "img/projects/arnequinze.png",
   link: "https://pgmgent-2021-atwork1.github.io/atwork-1_project_3-pgm-dieterschepers/index.html"
 },
 {
   id: "fb8d4e0f-8af8-4179-b183-cfa942b4130c",
   title: "Future Island",
-  text: "Future Island was onze eindtaak van de eerste periode. Onder andere hebben we geleerd dat je met 1 click een hele div kan opvullen zoals de werking van deze 3 projecten buttons.",
+  text: "Future Island was our endproject during the first period. We learned that you could fill up a whole div with content with just 1 click. Kinda how these 3 buttons work.",
   img: "img/projects/futureisland.png",
   link: "https://pgm-dieterschepers.github.io/future-island/"
 },
 {
   id: "609f82e9-f862-4973-8c9b-871efb4449c3",
   title: "HotRed (coming soon)",
-  text: "HotRed (Coolblue, snap je hem?) is hét eindproject van ons eerste jaar. Hierbij is het de bedoeling dat we een webshop zo goed mogelijk namaken in groepjes van 2. Van sitemap, wireframe enzovoort tot het volledig werkende resultaat.",
+  text: "HotRed (Coolblue, get it?) is THE endproject of our first year of school. The intention is that we imitate a webshop in groups of 2 as well as possible. From sitemap, wireframe and so on to the full working result.",
   img: "img/projects/hotred.png",
   link: "#"
 }
@@ -45,17 +45,15 @@ for (let i = 1; i < 12; i++) {
   skillsGrid.innerHTML += `<img src='img/skills/skill${i}.svg' >`;
 };
 
-
+// shows project list items
 projects.forEach(project => {
   projectsHTML.innerHTML += `
   <li class='projects__list-item' data-id=${project.id}>${project.title}</li>
   `
 })
 
-
+// shows collapsing info from projects
 const projectsListItem = document.querySelectorAll('.projects__list-item');
-
-
 projectsListItem.forEach(project => {
   project.addEventListener('click', (ev) => {
     const projectData = projects.find((project) => project.id === ev.target.dataset.id);
@@ -66,3 +64,7 @@ projectsListItem.forEach(project => {
     `
   });
 });
+
+
+// fetch skills.json
+
