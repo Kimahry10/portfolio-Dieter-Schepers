@@ -539,7 +539,7 @@ a {
 }
 
 .projects__list-item__view-project {
-  background: yellow;
+  background: var(--yellow-color);
   color: var(--primary-color);
   font-size: 1.2rem;
   font-weight: bold;
