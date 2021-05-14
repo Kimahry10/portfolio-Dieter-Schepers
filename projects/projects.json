@@ -1,20 +1,21 @@
 [{
         "id": "e71edeb9-d51a-475e-b3af-202211c2fca4",
         "title": "Arne Quinze",
-        "text": "Arne Quinze is a Belgian artist whose site we had to copy. In this project I taught myself css grid.",
+        "text": "Arne Quinze is a Belgian artist whose site we used as a basis for a project. I used this project to teach myself css grid.",
         "img": "img/projects/arnequinze.PNG",
         "link": "https://pgmgent-2021-atwork1.github.io/atwork-1_project_3-pgm-dieterschepers/index.html"
     },
     {
         "id": "fb8d4e0f-8af8-4179-b183-cfa942b4130c",
         "title": "Future Island",
-        "text": "Future Island was our endproject during the first period. We learned that you could fill up a whole div with content with just 1 click. Kinda how these 3 buttons work.",
+        "text": "Future Island was our final project during the first semester. We learned how to fill up a whole div with content in just one click. This is also how the following three buttons work.",
         "img": "img/projects/futureisland.PNG",
         "link": "https://pgm-dieterschepers.github.io/future-island/"
-    }, {
+    },
+    {
         "id": "609f82e9-f862-4973-8c9b-871efb4449c3",
         "title": "HotRed (coming soon)",
-        "text": "HotRed (Coolblue, get it?) is THE endproject of our first year of school. The intention is that we imitate a webshop in groups of 2 as well as possible. From sitemap, wireframe and so on to the full working result.",
+        "text": "HotRed (Coolblue, get it?) is THE final project of our first year. For this project we built a webshops in a team of two people. Starting from Sitemap, Wireframe, ...all the way to a fully functional result.",
         "img": "img/projects/hotred.PNG",
         "link": "#"
     }
