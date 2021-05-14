@@ -15,7 +15,7 @@ const projects = [{
 {
   id: "609f82e9-f862-4973-8c9b-871efb4449c3",
   title: "HotRed (coming soon)",
-  text: "HotRed (Coolblue, get it?) is THE endproject of our first year of school. The intention is that we imitate a webshop in groups of 2 as well as possible. From sitemap, wireframe and so on to the full working result.",
+  text: "HotRed (Coolblue, get it?) is THE endproject of our first year of school. The intention is that we imitate a webshop as good as possible in groups of 2. From sitemap, wireframe and so on to the full working result.",
   img: "img/projects/hotred.PNG",
   link: "#"
 }
