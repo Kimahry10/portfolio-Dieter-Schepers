@@ -11,6 +11,31 @@
 
 }
 
+@keyframes boxShadow {
+  0% {
+    box-shadow: 0 0 0 0 var(--yellow-color);
+  }
+
+  25% {
+    box-shadow: 0px 0px 3px 3px var(--yellow-color);
+  }
+
+  50% {
+    box-shadow: 0 0 0 0 var(--yellow-color);
+
+  }
+
+  75% {
+    box-shadow: 0px 0px 3px 3px var(--yellow-color);
+
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 var(--yellow-color);
+
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -21,6 +46,8 @@ body {
   background: var(--primary-color);
   font-family: 'Montserrat';
 }
+
+a {}
 
 h1 {
   color: var(--yellow-color);
@@ -156,7 +183,7 @@ header {
   .header__navigation ul {
     display: flex;
     flex-direction: row;
-    justify-content: space-between; 
+    justify-content: space-between;
   }
 
   .header__navigation ul li {
@@ -172,12 +199,13 @@ header {
     display: inline-block;
     text-align: center;
   }
-.header__navigation ul li a:hover {
-  /* color: #25b382; */
-  text-shadow: 0 0 2px var(--yellow-color),
-  0 0 2px var(--yellow-color);
-}
-  
+
+  .header__navigation ul li a:hover {
+    /* color: #25b382; */
+    text-shadow: 0 0 2px var(--yellow-color),
+      0 0 2px var(--yellow-color);
+  }
+
 
   .header-image__hamburger {
     display: none;
@@ -464,7 +492,7 @@ a {
 }
 
 @media (min-width: 70rem) {
-  .projects{
+  .projects {
     margin: 14rem 0
   }
 }
@@ -486,9 +514,49 @@ a {
 }
 
 @media (min-width: 70rem) {
-  .projects__list-item{
+  .projects__list-item {
     font-size: 4rem;
   }
+}
+
+.projects__list-item__text {
+  margin: 2rem auto;
+}
+
+@media (min-width: 40rem) {
+  .projects__list-item__text {
+    text-align: center;
+    width: 80%;
+  }
+}
+
+.projects__list-item__view-project {
+  background: yellow;
+  color: var(--primary-color);
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 1rem;
+  margin: 1rem auto;
+  display: block;
+  /* animation: boxShadow 2s infinite; */
+}
+
+@media (min-width: 40rem) {
+  .projects__list-item__view-project {
+    padding: 1rem 2rem;
+    width: 15rem;
+    border-radius: var(--default-border-radius);
+  }
+  .projects__list-item__view-project:hover {
+    color: var(--white-color);
+    box-shadow: inset 15rem 0 0 0 #25b382;
+    transition: 0.4s;
+  }
+}
+
+.projects__project-info img {
+  width: 100%;
 }
 
 .projects__view-all {
@@ -504,18 +572,18 @@ a {
   border-radius: var(--default-border-radius);
 }
 
-.projects__view-all:hover {
-  color: var(--white-color);
-  box-shadow: inset 15rem 0 0 0 #25b382;
-  transition: 0.4s;
-}
-
 @media (min-width: 70rem) {
-  .projects__view-all{
+  .projects__view-all {
     margin-left: auto;
     margin-right: auto;
     padding: 1rem 2rem;
     width: 15rem;
+  }
+
+  .projects__view-all:hover {
+    color: var(--white-color);
+    box-shadow: inset 15rem 0 0 0 #25b382;
+    transition: 0.4s;
   }
 }
 
@@ -533,7 +601,7 @@ a {
 }
 
 @media (min-width: 70rem) {
-  .collaborate__contact-info{
+  .collaborate__contact-info {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -557,7 +625,7 @@ a {
 }
 
 @media (min-width: 70rem) {
-  .collaborate__contact-info li a{
+  .collaborate__contact-info li a {
     font-size: 1.8rem;
   }
 }
@@ -570,7 +638,7 @@ a {
 }
 
 @media (min-width: 70rem) {
-  .collaborate__form{
+  .collaborate__form {
     width: 40%;
     margin-left: auto;
     margin-right: auto;
@@ -629,7 +697,7 @@ label>.form-styling:focus+.form-label {
   color: var(--primary-color);
   display: block;
   width: 100%;
-  padding: 1rem;
+  padding: 1.3rem;
   border: none;
   border-radius: 3px;
   font-size: 1.2rem;
@@ -637,11 +705,18 @@ label>.form-styling:focus+.form-label {
   cursor: pointer;
 }
 
-.collaborate__form--submit-btn:hover {
-  color: var(--white-color);
-  box-shadow: inset 35rem 0 0 0 #25b382;
-  transition: 0.4s;
+@media (min-width: 70rem) {
+  .collaborate__form--submit-btn {
+    padding: 1rem 2rem;
+  }
+
+  .collaborate__form--submit-btn:hover {
+    color: var(--white-color);
+    box-shadow: inset 35rem 0 0 0 #25b382;
+    transition: 0.4s;
+  }
 }
+
 
 .footer-hr--above {
   margin: 7rem 0 0 0;
