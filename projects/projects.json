@@ -3,20 +3,23 @@
         "title": "Arne Quinze",
         "text": "Arne Quinze is a Belgian artist whose site we used as a basis for a project. I used this project to teach myself css grid.",
         "img": "img/projects/arnequinze.PNG",
-        "link": "https://pgmgent-2021-atwork1.github.io/atwork-1_project_3-pgm-dieterschepers/index.html"
+        "link": "https://pgmgent-2021-atwork1.github.io/atwork-1_project_3-pgm-dieterschepers/index.html",
+        "hightlight": false
     },
     {
         "id": "fb8d4e0f-8af8-4179-b183-cfa942b4130c",
         "title": "Future Island",
         "text": "Future Island was our final project during the first semester. We learned how to fill up a whole div with content in just one click. This is also how the following three buttons work.",
         "img": "img/projects/futureisland.PNG",
-        "link": "https://pgm-dieterschepers.github.io/future-island/"
+        "link": "https://pgm-dieterschepers.github.io/future-island/",
+        "hightlight": false
     },
     {
         "id": "609f82e9-f862-4973-8c9b-871efb4449c3",
         "title": "HotRed (coming soon)",
         "text": "HotRed (Coolblue, get it?) is THE final project of our first year. For this project we built a webshops in a team of two people. Starting from Sitemap, Wireframe, ...all the way to a fully functional result.",
         "img": "img/projects/hotred.PNG",
-        "link": "#"
+        "link": "#",
+        "hightlight": true
     }
 ]

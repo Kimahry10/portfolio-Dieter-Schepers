@@ -22,6 +22,7 @@ for (let i = 1; i < 12; i++) {
   skillsGrid.innerHTML += `<img src='img/skills/skill${i}.svg' >`;
 };
 
+
 // loops through projects.json
 fetch('projects/projects.json')
   .then(response => response.json())
