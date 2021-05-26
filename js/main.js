@@ -5,6 +5,8 @@ const projectsHTML = document.querySelector('.projects__list');
 
 const projectInfoHTML = document.querySelector('.projects__project-info');
 
+const scrollTopButton = document.querySelector('.arrow');
+
 
 
 
@@ -47,3 +49,26 @@ fetch('projects/projects.json')
       });
     });
   });
+
+
+// scroll to top button fade in after scroll
+var myScrollFunc = function () {
+  var y = window.scrollY;
+  if (y >= 200) {
+    scrollTopButton.style.display = 'block'
+  } else {
+    scrollTopButton.style.display = 'none'
+
+  }
+};
+window.addEventListener("scroll", myScrollFunc);
+
+// scroll to top button click animation
+function scrollToTop() {
+  // Scroll to top logic
+  document.documentElement.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  })
+}
+scrollTopButton.addEventListener("click", scrollToTop)
