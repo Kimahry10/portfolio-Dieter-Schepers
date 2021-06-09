@@ -150,7 +150,7 @@ hr {
   height: 2rem;
   border-bottom: 5px solid #FEE715;
   border-right: 5px solid #FEE715;
-  border-radius: 5px;
+  border-radius: 3px;
   transform: rotate(180deg);
   margin: -0.5rem 0;
   animation: animateScrollTopButton 2s infinite;
