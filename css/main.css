@@ -134,21 +134,25 @@ hr {
 /* scroll top button */
 .arrow {
   position: fixed;
-  bottom: -20px;
-  right: 80px;
+  bottom: 0;
+  right: 0;
   transform: translate(-50%, -50%);
   cursor: pointer;
 }
+@media (min-width: 70rem) {
+  .arrow{
+    right: 5rem;
+  }
+}
 .arrow span {
   display: block;
-  width: 30px;
-  height: 30px;
+  width: 2rem;
+  height: 2rem;
   border-bottom: 5px solid #FEE715;
-  /* 06A8FF */
   border-right: 5px solid #FEE715;
-  /* 06A8FF */
+  border-radius: 5px;
   transform: rotate(180deg);
-  margin: -10px;
+  margin: -0.5rem 0;
   animation: animateScrollTopButton 2s infinite;
 }
 /* scroll top button end */
