@@ -301,6 +301,12 @@ header {
   padding: 0 var(--styling-width-mobile);
 }
 
+@media (min-width: 70rem) {
+  .landingpage__intro-text{
+    max-width: 90%;
+  }
+}
+
 .landingpage__button-wrap {
   padding: 0 var(--styling-width-mobile);
   margin-top: 1rem;
