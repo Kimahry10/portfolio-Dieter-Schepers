@@ -8,7 +8,8 @@ const projectInfoHTML = document.querySelector('.projects__project-info');
 const scrollTopButton = document.querySelector('.arrow');
 
 
-
+const menuBtn = document.querySelector('.menu-btn');
+let menuOpen = false;
 
 
 // toggle hamburger
@@ -17,6 +18,17 @@ hamburger.forEach(ham => {
     (mobileNavigation.classList.contains('mobile-navigation--show')) ? mobileNavigation.classList.remove('mobile-navigation--show') : mobileNavigation.classList.add('mobile-navigation--show');
   });
 });
+
+// menuBtn.addEventListener('click', () => {
+//   if (!menuOpen) {
+//     menuBtn.classList.add('open');
+//     // mobileNavigation.classList.add('mobile-navigation--show');
+//     menuOpen = true;
+//   } else {
+//     menuBtn.classList.remove('open');
+//     menuOpen = false;
+//   }
+// });
 
 
 // shows all skills
