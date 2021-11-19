@@ -1,5 +1,7 @@
 const allProjectsHTML = document.querySelector('.projects-body__projects');
 
+
+// loop through projects
 fetch('../projects/projects.json')
   .then(res => res.json())
   .then(data => {
