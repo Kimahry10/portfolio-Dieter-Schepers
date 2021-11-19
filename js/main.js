@@ -43,6 +43,11 @@ navLink.forEach(link => {
   })
 });
 
+// disable scrolling when clicked on hamburger
+function noScroll() {
+  if (menuOpen) { window.scrollTo(0, 0); }
+}
+window.addEventListener('scroll', noScroll) 
 
 
 
