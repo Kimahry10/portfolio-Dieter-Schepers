@@ -9,26 +9,41 @@ const scrollTopButton = document.querySelector('.arrow');
 
 
 const menuBtn = document.querySelector('.menu-btn');
+const nav = document.querySelector('.mobile-navigation');
+const navLink = document.querySelectorAll('.mobile-navigation ul li a');
 let menuOpen = false;
 
 
 // toggle hamburger
-hamburger.forEach(ham => {
-  ham.addEventListener('click', () => {
-    (mobileNavigation.classList.contains('mobile-navigation--show')) ? mobileNavigation.classList.remove('mobile-navigation--show') : mobileNavigation.classList.add('mobile-navigation--show');
-  });
+// hamburger.forEach(ham => {
+//   ham.addEventListener('click', () => {
+//     (mobileNavigation.classList.contains('mobile-navigation--show')) ? mobileNavigation.classList.remove('mobile-navigation--show') : mobileNavigation.classList.add('mobile-navigation--show');
+//   });
+// });
+
+// hamburger toggle
+menuBtn.addEventListener('click', () => {
+  if (!menuOpen) {
+    menuBtn.classList.add('open');
+    nav.classList.add('show');
+    menuOpen = true;
+  } else {
+    menuBtn.classList.remove('open');
+    nav.classList.remove('show');
+    menuOpen = false;
+  }
 });
 
-// menuBtn.addEventListener('click', () => {
-//   if (!menuOpen) {
-//     menuBtn.classList.add('open');
-//     // mobileNavigation.classList.add('mobile-navigation--show');
-//     menuOpen = true;
-//   } else {
-//     menuBtn.classList.remove('open');
-//     menuOpen = false;
-//   }
-// });
+// when clicked on a link tag, the nav closes
+navLink.forEach(link => {
+  link.addEventListener('click', () => {
+    menuBtn.classList.remove('open');
+    nav.classList.remove('show');
+    menuOpen = false;
+  })
+});
+
+
 
 
 // shows all skills
@@ -70,7 +85,6 @@ var myScrollFunc = function () {
     scrollTopButton.style.display = 'block'
   } else {
     scrollTopButton.style.display = 'none'
-
   }
 };
 window.addEventListener("scroll", myScrollFunc);
