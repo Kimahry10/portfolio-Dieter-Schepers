@@ -14,12 +14,6 @@ const navLink = document.querySelectorAll('.mobile-navigation ul li a');
 let menuOpen = false;
 
 
-// toggle hamburger
-// hamburger.forEach(ham => {
-//   ham.addEventListener('click', () => {
-//     (mobileNavigation.classList.contains('mobile-navigation--show')) ? mobileNavigation.classList.remove('mobile-navigation--show') : mobileNavigation.classList.add('mobile-navigation--show');
-//   });
-// });
 
 // hamburger toggle
 menuBtn.addEventListener('click', () => {
