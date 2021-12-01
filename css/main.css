@@ -1,3 +1,13 @@
+::-moz-selection {
+  background: #FEE715;
+  color: #101820;
+}
+
+::selection {
+  background: #FEE715;
+  color: #101820;
+}
+
 @-webkit-keyframes animateScrollTopButton {
   0% {
     opacity: 0;

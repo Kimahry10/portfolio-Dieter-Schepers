@@ -11,6 +11,12 @@ $stylingWidthMobile: 1rem;
 
 $defaultBorderRadius: 3px;
 
+::selection {
+    background: $yellowColor;
+    color: $primaryColor;
+}
+
+
 @keyframes animateScrollTopButton {
     0% {
         opacity: 0;
